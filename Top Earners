@@ -1,0 +1,2 @@
+SELECT CONCAT((22 * 4912), "  ", COUNT(name)) FROM Employee
+WHERE salary = 4912;
