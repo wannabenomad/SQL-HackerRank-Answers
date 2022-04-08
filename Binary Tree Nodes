@@ -1,0 +1,13 @@
+SELECT N,
+    CASE
+        WHEN N = 15 THEN 'Root'
+        WHEN N = 2 THEN 'Inner'
+        WHEN N = 4 THEN 'Inner'
+        WHEN N = 6 THEN 'Inner'
+        WHEN N = 9 THEN 'Inner'
+        WHEN N = 11 THEN 'Inner'
+        WHEN N = 13 THEN 'Inner'
+        ELSE 'Leaf'
+    END
+FROM BST
+ORDER BY N ASC;
